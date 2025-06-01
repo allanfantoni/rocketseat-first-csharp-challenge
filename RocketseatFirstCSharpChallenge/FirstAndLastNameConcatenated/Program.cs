@@ -1,14 +1,15 @@
 ﻿using Utils;
 
-namespace WelcomeMessage;
+namespace FirstAndLastNameConcatenated;
 
 internal class Program
 {
     static void Main(string[] args)
     {
         var name = StringHelper.ReadText("nome");
+        var lastName = StringHelper.ReadText("sobrenome");
 
-        Console.WriteLine($"Olá, {name}! Seja muito bem-vindo");
+        Console.WriteLine($"Seu nome completo é: {name} {lastName}");
 
         ConsoleHelper.PromptToExit();
     }
