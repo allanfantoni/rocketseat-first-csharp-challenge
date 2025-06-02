@@ -8,6 +8,25 @@ public static class StringHelper
     private const string FullNamePattern = @"^([A-Za-zÀ-ÖØ-öø-ÿ]+(?:\s+[A-Za-zÀ-ÖØ-öø-ÿ]+)+)$";
 
     /// <summary>
+    /// Prompts the user to input a valid text.
+    /// </summary>
+    /// <param name="label">A label describing what is being requested.</param>
+    /// <returns>The validated value input.</returns>
+    public static string ReadText(string label)
+    {
+        while (true)
+        {
+            Console.WriteLine($"Digite seu {label}:");
+            string? text = Console.ReadLine();
+
+            if (!IsAValidName(text))
+                Console.WriteLine("Entrada inválida! Digite apenas letras e espaços.");
+            else
+                return text!;
+        }
+    }
+
+    /// <summary>
     /// Checks if the entered name contains only letters and spaces.
     /// </summary>
     /// <param name="value">The name to be validated.</param>
@@ -27,24 +46,5 @@ public static class StringHelper
     {
         string value = $"{firstValue} {secondValue}";
         return !string.IsNullOrWhiteSpace(value) && Regex.IsMatch(value.Trim(), FullNamePattern);
-    }
-
-    /// <summary>
-    /// Prompts the user to input a valid name.
-    /// </summary>
-    /// <param name="valueType">A label describing what is being requested.</param>
-    /// <returns>The validated string input.</returns>
-    public static string ReadText(string valueType)
-    {
-        while (true)
-        {
-            Console.WriteLine($"Digite seu {valueType}:");
-            string? text = Console.ReadLine();
-
-            if (!IsAValidName(text))
-                Console.WriteLine("Entrada inválida! Digite apenas letras e espaços.");
-            else
-                return text!;
-        }
     }
 }
