@@ -16,7 +16,7 @@ public static class StringHelper
     {
         while (true)
         {
-            Console.WriteLine($"Digite seu {label}:");
+            Console.WriteLine($"{label}");
             string? text = Console.ReadLine();
 
             if (!IsAValidName(text))
@@ -46,5 +46,29 @@ public static class StringHelper
     {
         string value = $"{firstValue} {secondValue}";
         return !string.IsNullOrWhiteSpace(value) && Regex.IsMatch(value.Trim(), FullNamePattern);
+    }
+
+    /// <summary>
+    /// Counts the number of characters in a given text, excluding whitespaces.
+    /// </summary>
+    /// <param name="text">The text to analyze.</param>
+    /// <returns>The count of characters excluding whitespaces.</returns>
+    public static int GetCharacterCount(string? text)
+    {
+        var count = 0;
+
+        if (string.IsNullOrWhiteSpace(text))
+        {
+            Console.WriteLine("Texto em branco ou vazio.");
+            return count;
+        }
+
+        foreach (var ch in text)
+        {
+            if (!char.IsWhiteSpace(ch))
+                count++;
+        }
+
+        return count;
     }
 }
