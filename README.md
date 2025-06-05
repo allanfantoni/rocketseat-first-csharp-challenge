@@ -16,6 +16,11 @@ First practical exercises to master C#, provided by Rocketseat's C# training cou
    - Average.
 
 4. **TextLengthAnalyzer**: Create a program in which the user types one or more words and the number of characters the entered word has is displayed.
+5. **LicensePlateValidator**: Create a program in which the user needs to enter a vehicle's license plate and the program checks whether the plate is valid, following the Brazilian standard until 2018:
+   - The plate must have 7 alphanumeric characters;
+   - The first three characters are letters (upper or lower case);
+   - The last four characters are numbers;
+At the end, the program should display ***True*** if the plate is valid and ***False*** otherwise.
 
 ## ⚙️ .NET and C# version
 

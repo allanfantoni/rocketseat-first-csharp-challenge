@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathematicalOperations", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextLengthAnalyzer", "TextLengthAnalyzer\TextLengthAnalyzer.csproj", "{B844DF09-A96D-43F0-9418-1767F6C2D6C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensePlateValidator", "LicensePlateValidator\LicensePlateValidator.csproj", "{3D52F4D5-8ED0-48EA-A926-AEB18B8B0735}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B844DF09-A96D-43F0-9418-1767F6C2D6C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B844DF09-A96D-43F0-9418-1767F6C2D6C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B844DF09-A96D-43F0-9418-1767F6C2D6C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D52F4D5-8ED0-48EA-A926-AEB18B8B0735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D52F4D5-8ED0-48EA-A926-AEB18B8B0735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D52F4D5-8ED0-48EA-A926-AEB18B8B0735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D52F4D5-8ED0-48EA-A926-AEB18B8B0735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
