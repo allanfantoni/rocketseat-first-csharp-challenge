@@ -20,7 +20,8 @@ First practical exercises to master C#, provided by Rocketseat's C# training cou
    - The plate must have 7 alphanumeric characters;
    - The first three characters are letters (upper or lower case);
    - The last four characters are numbers;
-At the end, the program should display ***True*** if the plate is valid and ***False*** otherwise.
+   
+   At the end, the program should display ***True*** if the plate is valid and ***False*** otherwise.
 
 ## ⚙️ .NET and C# version
 
