@@ -16,11 +16,17 @@ First practical exercises to master C#, provided by Rocketseat's C# training cou
    - Average.
 
 4. **TextLengthAnalyzer**: Create a program in which the user types one or more words and the number of characters the entered word has is displayed.
-5. **LicensePlateValidator**: Create a program in which the user needs to enter a vehicle's license plate and the program checks whether the plate is valid, following the Brazilian standard until 2018:
+
+5. **LicensePlateValidator**: Create a program in which the user needs to enter a vehicle's license plate and the program checks whether the plate is valid, following the Brazilian standard until 2018. At the end, the program should display ***True*** if the plate is valid and ***False*** otherwise.
    - The plate must have 7 alphanumeric characters;
    - The first three characters are letters (upper or lower case);
    - The last four characters are numbers;
-At the end, the program should display ***True*** if the plate is valid and ***False*** otherwise.
+
+6. **DateFormatter**: Create a program that prompts the user to display the current date in different formats:
+   - Full format (day of the week, day of the month, month, year, hour, minutes, seconds).
+   - Date only in the format "01/03/2024".
+   - Time only in 24-hour format.
+   - Date with the month written out in full.
 
 ## ⚙️ .NET and C# version
 
